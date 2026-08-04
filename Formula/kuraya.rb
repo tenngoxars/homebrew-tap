@@ -12,8 +12,8 @@ class Kuraya < Formula
   homepage "https://github.com/tenngoxars/Kuraya"
 
   # 版本由 URL 自动推断（含 v0.2.0），无需显式 version
-  url "https://github.com/tenngoxars/Kuraya/releases/download/v0.5.6/Kuraya-0.5.6-mac-arm64.zip"
-  sha256 "8e1163c5487d15f88315b1190a493a7b82b37023263f624b184d55fc22516cd9"
+  url "https://github.com/tenngoxars/Kuraya/releases/download/v0.5.7/Kuraya-0.5.7-mac-arm64.zip"
+  sha256 "69358e3618f90517d815d22a076e3ea143ad25e060b5f0cecfc6e888f4bea090"
 
   def install
     libexec.install Dir["*"]
