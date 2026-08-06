@@ -25,7 +25,7 @@ class Kuraya < Formula
   # 无法用环境变量判断语言，改读 macOS 系统语言（AppleLanguages）。
   def caveats
     langs = `defaults read -g AppleLanguages 2>/dev/null`.to_s
-    if langs.match?(/zh-Hant|zh[__-](TW|HK|MO)/i)
+    if langs.match?(/zh-Hant|zh[_-](TW|HK|MO)/i)
       <<~EOS
         設定寫在程式目錄旁的 设置.ini，brew upgrade 會被重置，升級後重新設定即可。
         點擊封面播放：首次執行 kuraya 會自動把隨包的 Kuraya.app 裝入 ~/Applications 並註冊協定。
